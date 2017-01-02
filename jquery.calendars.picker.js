@@ -753,6 +753,9 @@
 			if (plugin.curInst) {
 				plugin.hide(plugin.curInst, true);
 			}
+			if (elem.prop("readonly") === true) {
+			    return;
+			}
 			if (!$.isEmptyObject(inst)) {
 				// Retrieve existing date(s)
 				inst.lastVal = null;
